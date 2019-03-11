@@ -1,7 +1,7 @@
 <DoctypeHtml!>
 <html>
   <head>
-    <title>Canyon Clothing</title>
+    <title>Canyon Clothing: Order Form</title>
   </head>
 
   <body>
@@ -11,30 +11,150 @@
       <input type="text" name="firstname" id="firstname">
       <label for="lastname">Last Name</label>
       <input type="text" name="lastname" id="lastname">
-      <span>Which club are you buying for?</span>
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="brainbowl">Brain Bowl</label>
-      <input id="brainbowl" type="radio" name="brainbowl" value="yes">
-      <label for="canyonclimbers">Canyon Climbers</label>
-      <input id="canyonclimbers" type="radio" name="canyonclimber" value="yes">
-      <label for="dramaclub">Drama Club</label>
-      <input id="dramaclub" type="radio" name="dramaclub" value="yes">
-      <label for="ecoclub">Eco Club</label>
-      <input id="ecoclub" type="radio" name="ecoclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
-      <label for="alphaclub">Alpha Club</label>
-      <input id="alphaclub" type="radio" name="alphaclub" value="yes">
+      <section class="club-selection">
+        <label for="club">Which club are you in?</label>
+<!--This is the club selection-->
+      <input list="clubs" id="club" name="club">
+        <datalist id="clubs">
+          <option>Alpha Club</option>
+          <option>Archery Club</option>
+          <option>ASL Club</option>
+          <option>Automotive Enthusiasts Club</option>
+          <option>Battle of the Books</option>
+          <option>Biotech Club</option>
+          <option>Brain Bowl</option>
+          <option>Breakfast Club</option>
+          <option>Cane's Chicken Club</option>
+          <option>Canyon Climbers</option>
+          <option>Chamber Music Club</option>
+          <option>Chemistry Olympiad</option>
+          <option>Chess Club</option>
+          <option>Classics Club</option>
+          <option>Cricket Club</option>
+          <option>Dare to Share</option>
+          <option>Drama Club</option>
+          <option>Drawing Club</option>
+          <option>Dungeons and Dragons Club</option>
+          <option>eSports Club</option>
+          <option>Fellowship of Christian Athletes</option>
+          <option>Fellowship of Christian Students</option>
+          <option>Free Tibet Club</option>
+          <option>Friends of Jaclyn</option>
+          <option>Gay Straight Alliance</option>
+          <option>Girl Up</option>
+          <option>Girls Who Code</option>
+          <option>Glee Club</option>
+          <option>Gluten Free Club</option>
+          <option>Habitat for Humanity</option>
+          <option>Hacky-Sack</option>
+          <option>Hands for Hands</option>
+          <option>Harry Potter Club</option>
+          <option>Helping Hands Community Service</option>
+          <option>HOSA</option>
+          <option>Human Rights Club</option>
+          <option>Improv Club</option>
+          <option>Interact Club</option>
+          <option>Introduction to Medicine</option>
+          <option>Jags Go Pink</option>
+          <option>Jewish Student Cultural Connection</option>
+          <option>Learning Link</option>
+          <option>Lunch Club</option>
+          <option>Math Club</option>
+          <option>Margins Art</option>
+          <option>Model UN</option>
+          <option>Operation Smile</option>
+          <option>OUR Rescue</option>
+          <option>Philosophy Club</option>
+          <option>Photography Club</option>
+          <option>Ping-Pong Club</option>
+          <option>Playlist Club</option>
+          <option>PULSE</option>
+          <option>Random Acts of Positivity</option>
+          <option>Robotics Club</option>
+          <option>RCHS Respecy</option>
+          <option>RC Stock Exchange</option>
+          <option>RC Students for Life</option>
+          <option>Science Fair Judging Club</option>
+          <option>Science Bowl</option>
+          <option>Science Olympiad</option>
+          <option>Ski and Snowboard Club</option>
+          <option>Ski Bum</option>
+          <option>Sources of Strength</option>
+          <option>Teen Service Team</option>
+          <option>Tie Dye Club</option>
+          <option>UNICEF</option>
+          <option>Unified Sports</option>
+          <option>Volunteers for Veterans Club</option>
+        </section>
+<!--This is the design selection-->
+        <section class="front">
+          <span>What design would you like on the front?</span>
+          <br>
+          <input type="radio" name="smallrc" id="smallrc" value="smallrc">
+          <label for="smallrc">Small Front RC Logo</label>
+          <input type="radio" name="largerc" id="largerc" value="largerc">
+          <label for="largerc">Large Front RC Logo</label>
+          <input type="radio" name="smalllogo" id="smalllogo" value="smalllogo">
+          <label for="smalllogo">Small Front Club Logo</label>
+          <input type="radio" name="largelogo" id="largelogo" value="largelogo">
+          <label for="largelogo">Large Front Club Logo</label>
+          <input type="radio" name="none" id="none" value="none">
+          <label for="none">None</label>
+        </section>
+<br>
+        <section class="back">
+          <span>What design would you like on the back?</span>
+          <br>
+          <input type="radio" name="largerc" id="largerc" value="largerc">
+          <label for="largerc">Large Back RC Logo</label>
+          <input type="radio" name="largelogo" id="largelogo" value="largelogo">
+          <label for="largelogo">Large Back Club Logo</label>
+          <input type="radio" name="none" id="none" value="none">
+          <label for="none">None</label>
+        </section>
+<br>
+        <section class="colour">
+          <span>What colour?</span>
+          <br>
+          <input type="radio" name="white" id="white" value="white">
+          <label for="white">White</label>
+          <input type="radio" name="black" id="black" value="black">
+          <label for="black">Black</label>
+          <input type="radio" name="gold" id="gold" value="gold">
+          <label for="gold">Gold</label>
+          <input type="radio" name="grey" id="grey" value="grey">
+          <label for="grey">Grey</label>
+        </section>
+
+<!--Size selection-->
+        <section class="size">
+          <input type="number" name="wxsmall" id="wxsmall">
+          <label for="wxsmall">Womens X-Small</label>
+          <input type="number" name="mxsmall" id="mxsmall">
+          <label for="mxsmall">Mens X-Small</label>
+          <input type="number" name="wsmall" id="wsmall">
+          <label for="wsmall">Womens Small</label>
+          <input type="number" name="msmall" id="msmall">
+          <label for="msmall">Mens Small</label>
+          <input type="number" name="wmedium" id="wmedium">
+          <label for="wmedium">Womens Medium</label>
+          <input type="number" name="mmedium" id="mmedium">
+          <label for="mmedium">Mens Medium</label>
+          <input type="number" name="wlarge" id="wlarge">
+          <label for="wlarge">Womens Large</label>
+          <input type="number" name="mlarge" id="mlarge">
+          <label for="mlarge">Mens Large</label>
+          <input type="number" name="wxl" id="wxl">
+          <label for="wxl">Womens X-Large</label>
+          <input type="number" name="mxl" id="mxl">
+          <label for="mxl">Mens X-Large</label>
+        </section>
+
+<!--Extra info section-->
+        <section class="extra-info">
+          <label for="extra">Additional Comments</label>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
     </form>
   </body>
+  </html>
