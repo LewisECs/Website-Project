@@ -2,43 +2,91 @@
 <html>
   <head>
     <title>Mens: Canyon Clothing</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
   </head>
 
   <body>
     <h1>Mens</h1>
     <h2>Tops</h2>
+
+    <h3 class="tanktop">Tank Top</h3>
+      <div class="tanktop">
+          <span id="tanktopb"></span>
+          <span id="tanktopw"></span>
+          <span id="tanktopg"></span>
+          <span id="tanktopgo"></span>
+          <div class="image-holder">
+              <img class="slider-image" src="img_blacktank.jpg" style="width:100%">
+              <img class="slider-image" src="img_whitetank.jpg" style="width:100%">
+              <img class="slider-image" src="img_goldtank.jpg" style="width:100%">
+              <img class="slider-image" src="img_greytank.jpg" style="width:100%">
+      </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+<!--
       <h3 class="tanktop">Tank Top</h3>
-        <div class="tanktop">
-          <img class="mySlides" src="img_blacktank.jpg" style="width:100%">
-          <img class="mySlides" src="img_whitetank.jpg" style="width:100%">
-          <img class="mySlides" src="img_goldtank.jpg" style="width:100%">
-          <img class="mySlides" src="img_greytank.jpg" style="width:100%">
+        <div class="slideshow-container">
+          <img class="tanktop" src="img_blacktank.jpg" style="width:100%">
+          <img class="tanktop" src="img_whitetank.jpg" style="width:100%">
+          <img class="tanktop" src="img_goldtank.jpg" style="width:100%">
+          <img class="tanktop" src="img_greytank.jpg" style="width:100%">
 
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+      -->
       <h3 class="shortsleeve">Short Sleeve Tee</h3>
-        <div class="w3-content w3-display-container">
-          <img class="mySlides" src="img_blackshort.jpg" style="width:100%">
-          <img class="mySlides" src="img_whiteshort.jpg" style="width:100%">
-          <img class="mySlides" src="img_goldshort.jpg" style="width:100%">
-          <img class="mySlides" src="img_greyshort.jpg" style="width:100%">
+        <div class="slideshow-container">
+          <img class="shortsleeve" src="img_blackshort.jpg" style="width:100%">
+          <img class="shortsleeve" src="img_whiteshort.jpg" style="width:100%">
+          <img class="shortsleeve" src="img_goldshort.jpg" style="width:100%">
+          <img class="shortsleeve" src="img_greyshort.jpg" style="width:100%">
 
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       <h3 class="longsleeve">Long Sleeve Tee</h3>
-        <div class="w3-content w3-display-container">
-          <img class="mySlides" src="img_blacklong.jpg" style="width:100%">
-          <img class="mySlides" src="img_whitelong.jpg" style="width:100%">
-          <img class="mySlides" src="img_goldlong.jpg" style="width:100%">
-          <img class="mySlides" src="img_greylong.jpg" style="width:100%">
+        <div class="slideshow-container">
+          <img class="longsleeve" src="img_blacklong.jpg" style="width:100%">
+          <img class="longsleeve" src="img_whitelong.jpg" style="width:100%">
+          <img class="longsleeve" src="img_goldlong.jpg" style="width:100%">
+          <img class="longsleeve" src="img_greylong.jpg" style="width:100%">
 
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-      <h3>Hoodie</h3>
-      <h3>Jacket</h3>
+      <h3 class="hoodie">Hoodie</h3>
+        <div class="slideshow-container">
+          <img class="hoodie" src="img_blackhood.jpg" style="width:100%">
+          <img class="hoodie" src="img_whitehood.jpg" style="width:100%">
+          <img class="hoodie" src="img_goldhood.jpg" style="width:100%">
+          <img class="hoodie" src="img_greyhood.jpg" style="width:100%">
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      <h3 class="jacket">Jacket</h3>
+        <div class="slideshow-container">
+          <img class="jacket" src="img_blackjack.jpg" style="width:100%">
+          <img class="jacket" src="img_whitejack.jpg" style="width:100%">
+          <img class="jacket" src="img_goldjack.jpg" style="width:100%">
+          <img class="jacket" src="img_greyjack.jpg" style="width:100%">
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+<!--Dots-->
+      <div style="text-align:center">
+        <span class="dot" onclick="curentSlide(1)"></span>
+        <span class="dot" onclick="curentSlide(2)"></span>
+        <span class="dot" onclick="curentSlide(3)"></span>
+        <span class="dot" onclick="curentSlide(4)"></span>
+        <span class="dot" onclick="curentSlide(5)"></span>
 
   </body>
   </html>

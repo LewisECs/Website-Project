@@ -5,8 +5,8 @@
   </head>
 
   <body>
+    <form action="submission.html" method="POST">
     <h1>Order Now</h1>
-    <form>
       <label for="firstname">First Name</label>
       <input type="text" name="firstname" id="firstname">
       <label for="lastname">Last Name</label>
@@ -86,6 +86,22 @@
           <option>Unified Sports</option>
           <option>Volunteers for Veterans Club</option>
         </section>
+
+<!--Style selection-->
+        <section class="style">
+            <span>Top Selection</span>
+            <input type="radio" name="tanktop" id="tanktop" value="tanktop">
+            <label for="tanktop">Tank Top</label>
+            <input type="radio" name="shortsleeve" id="shortsleeve" value="shortsleeve">
+            <label for="shortsleeve">Short Sleeve Tee</label>
+            <input type="radio" name="longsleeve" id="longsleeve" value="longsleeve">
+            <label for="longlseeve">Long Sleeve Tee</label>
+            <input type="radio" name="hoodie" id="hoodie" value="hoodie">
+            <label for="hoodie">Hoodie</label>
+            <input type="radio" name="jacket" id="jacket" value="jacket">
+            <label for="jacket">Jacket</label>
+          </section>
+
 <!--This is the design selection-->
         <section class="front">
           <span>What design would you like on the front?</span>
@@ -154,6 +170,10 @@
         <section class="extra-info">
           <label for="extra">Additional Comments</label>
           <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+
+        <section class="submission">
+          <input value="Submit" type="Submit">
         </section>
     </form>
   </body>
