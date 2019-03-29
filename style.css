@@ -39,99 +39,80 @@ ul li:hover ul li {
     display: block;
 }
 
+img {
+    height: 300px
+}
 
-
-
-/*
-.slider-container{
-  width: 450px;
-  height: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  text-align: center;
-}
-.image-container{
-  width: 1350px;
-  height: 450px;
-  position: relative;
-  transition: left 2s;
-}
-.shortsleeve{
-  float: left;
-  margin: 0px
-  padding: 0px;
-}
-.button-container{
-  top: -20px;
-  position: relative;
-}
-.slider-button{
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background-color: white;
-}
-#slider-image-img_blackshort:target ~ .image-container{
-  left: 0px;
-}
-#slider-image-img_whiteshort:target ~ .image-container{
-  left: -450px;
-}
-#slider-image-img_goldshort:target ~ .image-container{
-  left: -900px;
-}
-#slider-image-img_greyshort:target ~ .image-container{
-  left: -1350px;
-}
-.prev, .next{
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top:-22px;
-  padding:16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next{
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover{
-  background-color: rgba(0,0,0,0.8)
-}
-.dot{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover{
-  background-color: #717171;
-}
-.myslides{
-  display: none;
-}
-*/
-
+/* to order the images in both mens and womens */
 .column {
   float: left;
-  width: 25%;
-  padding: 0px;
+  width: 300px;
+  height: 600px;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
 }
 
 .row::after{
   content: "";
-  clear: all;
   display: table;
+  clear: both;
 }
+
+.header{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  font-family:cursive;
+}
+ .subtitle{
+   font-size: 32px
+   font-family: cursive;
+ }
+
+/* tried a hover overlay here
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+*/
