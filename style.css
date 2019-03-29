@@ -51,26 +51,21 @@ ul li:hover ul li {
   overflow: hidden;
   text-align: center;
 }
-
 .image-container{
   width: 1350px;
   height: 450px;
   position: relative;
   transition: left 2s;
 }
-
 .shortsleeve{
   float: left;
   margin: 0px
   padding: 0px;
 }
-
 .button-container{
   top: -20px;
   position: relative;
-
 }
-
 .slider-button{
   display: inline-block;
   height: 10px;
@@ -78,23 +73,18 @@ ul li:hover ul li {
   border-radius: 5px;
   background-color: white;
 }
-
 #slider-image-img_blackshort:target ~ .image-container{
   left: 0px;
 }
-
 #slider-image-img_whiteshort:target ~ .image-container{
   left: -450px;
 }
-
 #slider-image-img_goldshort:target ~ .image-container{
   left: -900px;
 }
-
 #slider-image-img_greyshort:target ~ .image-container{
   left: -1350px;
 }
-
 .prev, .next{
   cursor: pointer;
   position: absolute;
@@ -109,16 +99,13 @@ ul li:hover ul li {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 .next{
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .prev:hover, .next:hover{
   background-color: rgba(0,0,0,0.8)
 }
-
 .dot{
   cursor: pointer;
   height: 15px;
@@ -129,11 +116,9 @@ ul li:hover ul li {
   display: inline-block
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover{
   background-color: #717171;
 }
-
 .myslides{
   display: none;
 }
